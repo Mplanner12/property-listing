@@ -30,7 +30,7 @@ const HomePage: React.FC = () => {
         setProperties(response.data);
         setLoading(false);
       } catch (err) {
-        setError("Failed to fetch properties. Please try again later.");
+        setError(`${err}Failed to fetch properties. Please try again later.`);
         setLoading(false);
       }
     };
